@@ -1,12 +1,33 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+## Objetivos do teste:
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+ > - Validar o fluxo de navegação do usuário 
+ > - Validar o aluguel de jogos, informações (valores, descrição dos jogos, dados dos clientes e das lojas) e finalização de pedidos. 
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+## Público envolvido nos testes:  
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+Serão necessários 3 usuários para execução do teste, o qual busca abranger pessoas diversas como uma mãe atarefada, uma pessoa de meia idade, um jovem solteiro. 
+
+## Duração do teste: 
+
+O teste terá duração de até 15 minutos. 
+
+## Recrutamento: 
+
+O grupo irá recrutar e agendar os testes com os usuários 
+
+## Tarefas do Usuário: 
+
+> - Cadastrar e modificar senha e login 
+
+> - Acessar a página de amostragem de jogos 
+
+> - Acessar a página de detalhamento de jogos 
+
+> - Selecionar jogos e ir a página de carrinho  
+
+> - Efetuar o pedido  
 
 > **Links Úteis**:
 > - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
