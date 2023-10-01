@@ -14,7 +14,9 @@ Desta forma, torna-se interessante a organização de um recurso online onde qua
 
 Fonte 1: https://www.uai.com.br/app/noticia/mf-press/2021/04/28/noticias-mf-press-entretenimento,271990/procura-por-jogos-de-tabuleiro-cresce-na-pandemia-garante-ceo-da-my-toy-br.shtml. Acesso em 28/08/2023. 
 
-Fonte 2: https://diariodonordeste.verdesmares.com.br/verso/jogos-de-tabuleiro-auxiliam-na-socializacao-apos-isolamento-da-pandemia-veja-opcoes-para-jogar-1.3146584; https://www.opovo.com.br/vidaearte/2020/08/21/jogos-de-tabuleiro-sao-alternativa-de-entretenimento-e-diversao-em-familia--durante-a-pandemia.html
+Fonte 2: https://diariodonordeste.verdesmares.com.br/verso/jogos-de-tabuleiro-auxiliam-na-socializacao-apos-isolamento-da-pandemia-veja-opcoes-para-jogar-1.3146584. Acesso em 28/08/2023.
+
+Fonte 3: https://www.opovo.com.br/vidaearte/2020/08/21/jogos-de-tabuleiro-sao-alternativa-de-entretenimento-e-diversao-em-familia--durante-a-pandemia.html. Acesso em 28/08/2023.
 
 ## Problema
 Conforme exposto, o problema que se busca resolver com este projeto é a dificuldade que grupos ou pessoas interessadas têm em encontrar locais onde possam alugar jogos de tabuleiro e possam optar por receberem em casa ou buscar no local, de acordo com suas condições e preferências.  
