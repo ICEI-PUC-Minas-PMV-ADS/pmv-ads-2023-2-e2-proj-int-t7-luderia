@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# Luderia
 
-`CURSO`
+##Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+Projeto: Desenvolvimento de uma Aplicação Interativa 
 
-`SEMESTRE`
+Eixo 2
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.O objetivo geral deste trabalho é a criação de um portal que reúna várias luderias e seus catálogos, oferecendo um local onde o usuário possa fazer busca de jogos para alugar utilizando filtros como localização, tipo de jogo, nome do jogo, opções de entrega, dentre outros. 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Amanda Santos Souza Brescia
+* Alessandra Thevenard Freire
+* Farley Rodrigues Souza
+* Guilherme Moreira Santos
+* João Ricardo Ferreira Góis
+
 
 ## Orientador
 
-* Nome completo do professor 1
+* Bernardo Jeunon de Alencar
+
 
 ## Instruções de utilização
 
