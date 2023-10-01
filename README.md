@@ -1,10 +1,10 @@
 # Luderia
 
-##Análise e Desenvolvimento de Sistemas
+## Análise e Desenvolvimento de Sistemas
 
-Projeto: Desenvolvimento de uma Aplicação Interativa 
+## Projeto: Desenvolvimento de uma Aplicação Interativa 
 
-Eixo 2
+## Eixo 2
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.O objetivo geral deste trabalho é a criação de um portal que reúna várias luderias e seus catálogos, oferecendo um local onde o usuário possa fazer busca de jogos para alugar utilizando filtros como localização, tipo de jogo, nome do jogo, opções de entrega, dentre outros. 
 
