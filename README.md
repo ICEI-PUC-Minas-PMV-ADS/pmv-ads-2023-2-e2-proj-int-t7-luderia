@@ -12,7 +12,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 * Amanda Santos Souza Brescia
 * Alessandra Thevenard Freire
-* Farley Rodrigues Souza
+* Farley Rodrigues De Souza
 * Guilherme Moreira Santos
 * João Ricardo Ferreira Góis
 
