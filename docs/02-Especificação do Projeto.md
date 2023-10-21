@@ -21,17 +21,7 @@ Marisa Pacheco é uma advogada de 37 anos, mãe de dois adolescentes e responsá
 #### História: 
 Hélio Santana é funcionário público e empresário, tem 44 anos e tem uma casa que oferece aluguel de jogos de tabuleiro para jogar no local ou levar para casa. Ele vê na sua empresa uma ótima oportunidade para manter as despesas da família, no entanto a loja quase não se sustenta, é mantida como um hobbie, devido a falta de clientes. Ele acredita que uma plataforma online que facilite o aluguel de jogos seria uma ótima maneira de aumentar sua cartela de clientes e aumentar a receita de sua luderia.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
@@ -50,14 +40,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Hélio Santana       | Saber quando um jogo será devolvido  | Libera-lo ou não para reserva           |
 
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
@@ -67,16 +49,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| O site deve gerenciar dois tipos de conta – loja e jogador  | ALTA | 
-|RF-002| O site deve buscar jogos segundo atributos informados pelo usuário    | ALTA |
-|RF-003| O site deve emitir relatório de jogos mais procurados | MÉDIA | 
-|RF-004| Gerenciar o login do usuário cadastrado      | ALTA |
-|RF-005| Permitir que o usuário possa deletar a conta  | MÉDIA | 
-|RF-006| Gerenciar o aluguel dos jogos    | ALTA |
-|RF-007| Registrar o aluguel de jogo  | MÉDIA | 
+|RF-001| Gerenciar  conta do estabelecimento  | ALTA | 
+|RF-002| Buscar jogos segundo atributos informados pelo usuário    | ALTA |
+|RF-003| Emitir relatório de jogos mais procurados | BAIXA | 
+|RF-004| Gerenciar o login do estabelecimento      | ALTA |
+|RF-005| Permitir que o estabelecimento possa deletar a conta  | MÉDIA | 
+|RF-006| Gerenciar a escolha dos jogos    | ALTA |
+|RF-007| Registrar a escolha de jogo  | MÉDIA | 
 |RF-008| Selecionar entrega de jogo para cliente   | MÉDIA |
 |RF-009| Registrar devolução de jogo | MÉDIA | 
-|RF-010| Avaliar jogo | MÉDIA |
+|RF-010| Avaliar jogo | BAIXA |
+|RF-011| Cadastrar jogo | ALTA |
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
@@ -88,19 +71,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -110,10 +80,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01|O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 12/12/2023.  |
 |02| A equipe não pode subcontratar o desenvolvimento do trabalho. |
 
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
@@ -131,9 +97,3 @@ Em relação aos casos de uso, eles devem representar as interações ou transa�
 
 
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
