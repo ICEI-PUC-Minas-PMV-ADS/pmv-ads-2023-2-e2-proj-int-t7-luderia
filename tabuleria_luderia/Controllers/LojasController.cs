@@ -8,9 +8,9 @@ namespace tabuleria_luderia.Controllers
     [Authorize]
     public class LojasController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly AddDbContext _context;
 
-        public LojasController(AppDbContext context)
+        public LojasController(AddDbContext context)
         {
             _context = context;
         }

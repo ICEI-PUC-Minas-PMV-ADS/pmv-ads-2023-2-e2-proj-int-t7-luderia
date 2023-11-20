@@ -10,7 +10,7 @@ using tabuleria_luderia.Models;
 
 namespace tabuleria_luderia.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(AddDbContext))]
     [Migration("20231026134109_M01-AddTableLoja")]
     partial class M01AddTableLoja
     {

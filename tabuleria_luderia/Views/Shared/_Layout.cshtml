@@ -9,20 +9,26 @@
     <link rel="stylesheet" href="~/tabuleria_luderia.styles.css" asp-append-version="true" />
     <style>
       
+      
         footer {
             background-color:#FFC3C3;
+            padding: 15px;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+            text-align: center;
          
         }
-
+    </style>
 </head>
 
-</style>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 heading" id="cabecalho" style=" background: #FFC3C3;">
+                <div class="container-fluid" style=" background: #FFC3C3; top: 0;">
                     
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://i.postimg.cc/Bb2zp0VV/Logo.png" height="93px" width="355px"></a>
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://i.postimg.cc/Bb2zp0VV/Logo.png" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,6 +53,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a>
                                 </li>
+                                    
                             }
                         }
                         
@@ -81,7 +88,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-                <b>&copy; 2023 - tabuleria_luderia - Desenvolvido por A & A  | </b><a asp-area="" asp-controller="Home" asp-action="Privacy"><b>Privacy </b> </a>
+                <b>&copy; 2023 - tabuleria_luderia - Desenvolvido por A & A  | </b><a asp-area="" asp-controller="Home" asp-action="Privacy"><b>Privacidade </b> </a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

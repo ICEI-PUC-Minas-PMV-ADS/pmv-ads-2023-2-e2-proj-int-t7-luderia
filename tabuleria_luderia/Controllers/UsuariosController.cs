@@ -17,9 +17,9 @@ namespace tabuleria_luderia.Controllers
    
     public class UsuariosController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly AddDbContext _context;
 
-        public UsuariosController(AppDbContext context)
+        public UsuariosController(AddDbContext context)
         {
             _context = context;
         }

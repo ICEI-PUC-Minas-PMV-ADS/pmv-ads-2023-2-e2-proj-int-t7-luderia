@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,91 +9,85 @@ using tabuleria_luderia.Models;
 
 namespace tabuleria_luderia.Controllers
 {
-    [Authorize]
-    public class JogosController : Controller
+    public class ClientesController : Controller
     {
         private readonly AddDbContext _context;
 
-        public JogosController(AddDbContext context)
+        public ClientesController(AddDbContext context)
         {
             _context = context;
         }
 
-        // GET: Jogos
+        // GET: Clientes
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Jogos.Include(j => j.Loja);
-            return View(await appDbContext.ToListAsync());
+              return View(await _context.Clientes.ToListAsync());
         }
 
-        // GET: Jogos/Details/5
+        // GET: Clientes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Jogos == null)
+            if (id == null || _context.Clientes == null)
             {
                 return NotFound();
             }
 
-            var jogo = await _context.Jogos
-                .Include(j => j.Loja)
+            var cliente = await _context.Clientes
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (jogo == null)
+            if (cliente == null)
             {
                 return NotFound();
             }
 
-            return View(jogo);
+            return View(cliente);
         }
 
-        // GET: Jogos/Create
+        // GET: Clientes/Create
         public IActionResult Create()
         {
-            ViewData["LojaId"] = new SelectList(_context.Lojas, "Id", "NomeDaLoja");
             return View();
         }
 
-        // POST: Jogos/Create
+        // POST: Clientes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NomeDoJogo,Descricao,MinJogadores,MaxJogadores,IdadeMin,Mecanicas,Temas,Valor,LojaId")] Jogo jogo)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Senha,Tipo")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(jogo);
+                _context.Add(cliente);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LojaId"] = new SelectList(_context.Lojas, "Id", "NomeDaLoja", jogo.LojaId);
-            return View(jogo);
+            return View(cliente);
         }
 
-        // GET: Jogos/Edit/5
+        // GET: Clientes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Jogos == null)
+            if (id == null || _context.Clientes == null)
             {
                 return NotFound();
             }
 
-            var jogo = await _context.Jogos.FindAsync(id);
-            if (jogo == null)
+            var cliente = await _context.Clientes.FindAsync(id);
+            if (cliente == null)
             {
                 return NotFound();
             }
-            ViewData["LojaId"] = new SelectList(_context.Lojas, "Id", "NomeDaLoja", jogo.LojaId);
-            return View(jogo);
+            return View(cliente);
         }
 
-        // POST: Jogos/Edit/5
+        // POST: Clientes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeDoJogo,Descricao,MinJogadores,MaxJogadores,IdadeMin,Mecanicas,Temas,Valor,LojaId")] Jogo jogo)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Senha,Tipo")] Cliente cliente)
         {
-            if (id != jogo.Id)
+            if (id != cliente.Id)
             {
                 return NotFound();
             }
@@ -103,12 +96,12 @@ namespace tabuleria_luderia.Controllers
             {
                 try
                 {
-                    _context.Update(jogo);
+                    _context.Update(cliente);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!JogoExists(jogo.Id))
+                    if (!ClienteExists(cliente.Id))
                     {
                         return NotFound();
                     }
@@ -119,51 +112,49 @@ namespace tabuleria_luderia.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LojaId"] = new SelectList(_context.Lojas, "Id", "NomeDaLoja", jogo.LojaId);
-            return View(jogo);
+            return View(cliente);
         }
 
-        // GET: Jogos/Delete/5
+        // GET: Clientes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Jogos == null)
+            if (id == null || _context.Clientes == null)
             {
                 return NotFound();
             }
 
-            var jogo = await _context.Jogos
-                .Include(j => j.Loja)
+            var cliente = await _context.Clientes
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (jogo == null)
+            if (cliente == null)
             {
                 return NotFound();
             }
 
-            return View(jogo);
+            return View(cliente);
         }
 
-        // POST: Jogos/Delete/5
+        // POST: Clientes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Jogos == null)
+            if (_context.Clientes == null)
             {
-                return Problem("Entity set 'AppDbContext.Jogos'  is null.");
+                return Problem("Entity set 'AppDbContext.Clientes'  is null.");
             }
-            var jogo = await _context.Jogos.FindAsync(id);
-            if (jogo != null)
+            var cliente = await _context.Clientes.FindAsync(id);
+            if (cliente != null)
             {
-                _context.Jogos.Remove(jogo);
+                _context.Clientes.Remove(cliente);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool JogoExists(int id)
+        private bool ClienteExists(int id)
         {
-          return _context.Jogos.Any(e => e.Id == id);
+          return _context.Clientes.Any(e => e.Id == id);
         }
     }
 }
