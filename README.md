@@ -52,7 +52,8 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Código
 
-<li><a href="src/README.md"> Site Hospedado : https://tabuleriateste.azurewebsites.net/ </a></li>
+<li><a href="src/README.md"> Site Hospedado : </a></li>
+ https://tabuleriateste.azurewebsites.net/
 
 # Apresentação
 
