@@ -50,16 +50,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| Gerenciar  conta do estabelecimento  | ALTA | 
-|RF-002| Buscar jogos segundo atributos informados pelo usuário    | ALTA |
+|RF-002| Buscar jogos segundo atributos informados pelo usuário    | BAIXA |
 |RF-003| Emitir relatório de jogos mais procurados | BAIXA | 
 |RF-004| Gerenciar o login do estabelecimento      | ALTA |
-|RF-005| Permitir que o estabelecimento possa deletar a conta  | MÉDIA | 
-|RF-006| Gerenciar a escolha dos jogos    | ALTA |
-|RF-007| Registrar a escolha de jogo  | MÉDIA | 
-|RF-008| Selecionar entrega de jogo para cliente   | MÉDIA |
-|RF-009| Registrar devolução de jogo | MÉDIA | 
-|RF-010| Avaliar jogo | BAIXA |
-|RF-011| Cadastrar jogo | ALTA |
+|RF-005| Gerenciar a escolha dos jogos    | BAIXA |
+|RF-006| Registrar a escolha de jogo  | BAIXA | 
+|RF-007| Cadastrar jogo | ALTA |
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
